@@ -18,7 +18,7 @@ async function bulkAdd() {
     if (!file.endsWith(".html")) continue;
 
     const n = file.replace(".html", "");
-    const img = n + '.jpg"';
+    const img = n + ".jpg";
 
     let data = await fs.readFile(path.join(directoryPath, file), "utf8");
     data = data
@@ -33,7 +33,7 @@ async function bulkAdd() {
       .join(" ");
     const [a, ...b] = data.split('src="');
     const [c, ...d] = b.join('src="').split('"');
-    data = a + 'src="' + t + img + d.join('"');
+    data = a + 'src="' + t + img + '"' + d.join('"');
 
     const json = await HTMLToJSON(`<html><body>${data}</body></html>`);
     const content = json.content[0].content.filter(
