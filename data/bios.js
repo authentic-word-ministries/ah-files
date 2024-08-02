@@ -4,7 +4,7 @@ const path = require("path");
 const { HTMLToJSON } = require("html-to-json-parser");
 
 const t =
-  "https://raw.githubusercontent.com/authentic-word-ministries/ah-files/main/data/bios/";
+  "https://raw.githubusercontent.com/authentic-word-ministries/ah-files/main/photos/";
 
 const directoryPath = path.join(__dirname, "bios");
 
