@@ -11,6 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "firebase-admin": "^12.2.0",
-    "html-to-json-parser": "^2.0.1"
+    "html-to-json-parser": "^2.0.1",
+    "puppeteer": "^22.15.0"
   }
 }
